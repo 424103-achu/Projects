@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HANG-MAN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <div class="startpage" id="startpage">
+      <h1 class="hangman">HANG-MAN</h1>
+      <h2 class="welcome">WELCOME TO HANG-MAN GAME</h2>
+      <h3 class="ready">Tap to start game</h3>
+      <button class="start" onclick="startGame()">START</button>
+    </div>
+    <div id="game" style="display: none;">
+    <h2 class="title">HANG-MAN</h2>
+    <div class="title-containers">
+      <h2 class="game">GAME</h2>
+      <h2 class="score">SCORE-CARD</h2>
+    </div>
+    <div class="containers">
+      <div class="leftcontainer">
+        <div class="word">
+        </div>
+            <div class="letter">
+               <p class="enter">Guess the letter : </p>
+               <input type="text" class="blank-enter" maxlength="1" /> 
+          <button class="check" onclick="check()">CHECK</button>
+          </div>
+        <div class="hint">
+          <button class="show-hint" onclick="showhint()">SHOW HINT</button>
+          <p class="hint-content">-</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="rightcontainer">
+        <div class="your-score">
+            <h2>YOUR SCORE : </h2>
+        </div>
+        <div class="trials-container">
+          <p class="trials">7 wrong trials left</p>
+          <div class="attempt-counter">
+            <h1 class="attempts">-</h1>
+          </div>
+        </div>
+            <div class="rules">
+              <h3 class="scoring">Scoring :</h3>
+              <ul class="rule">
+                <li>+10*no of places matched</li>
+                <li>-5 for no match</li>
+                <li>+5*no of places matched after hint</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+    </div>
+    <div id="endgame" style="display: none;">
+      <h1 class="hangman">HANG-MAN</h1>
+      <div class="your-Score">
+      </div>
+      <div class="btn-container">
+      <button class="restart" onclick="restartgame()">RESTART</button>
+      <button class="exit" onclick="exitgame()">EXIT</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
