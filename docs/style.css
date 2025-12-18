@@ -1,0 +1,291 @@
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+html{
+    height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hangman{
+    padding-top: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+.welcome{
+    padding-top:20px ;
+    color:aliceblue;
+}
+.ready{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+.start{
+    background-color: #0f2027;
+    outline: none;
+    border: none;
+    height: 40px;
+    width :80px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+.startpage {
+  background-color: #203a43;
+  box-shadow: 1px 1px 3px gray;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.title-containers {
+  display: flex;
+  gap: 500px;
+  margin: 0px;
+}
+.game {
+  color: aliceblue;
+  margin-left: 450px;
+}
+.score {
+  color: aliceblue;
+  margin-left: 145px;
+}
+
+.word {
+  height: 150px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+.letter {
+  height: 100px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.enter {
+  color: aliceblue;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.check {
+  background-color: #0f2027;
+  color: aliceblue;
+  border: none;
+  width: 80px;
+  height: 30px;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+.hint {
+  background-color: #0f20276f;
+  width: 800px;
+  height: 100px;
+  margin: 50px;
+  margin-top: 0px;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.show-hint {
+  margin-left: 50px;
+  width: 120px;
+  height: 30px;
+  background-color: #0f2027;
+  color: aliceblue;
+  border-radius: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: none;
+}
+.hint-content {
+  margin: 0px;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+.blank {
+  width: 40px;
+  padding-bottom: 9px;
+  outline: none;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px groove aliceblue;
+  color: aliceblue;
+  font-size: 35px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.blank-enter {
+  width: 40px;
+  outline: none;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px groove aliceblue;
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+}
+
+.line {
+  height: 500px;
+  border: 1px groove gray;
+}
+.containers {
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+}
+.leftcontainer {
+  background-color: #203a43;
+  box-shadow: 1px 1px 3px gray;
+  width: 900px;
+  height: 500px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.your-score {
+  color: aliceblue;
+  padding-top: 60px;
+  padding-left: 50px;
+  margin: 0px;
+  font-size: small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.trials-container {
+  color: aliceblue;
+  padding-top: 30px;
+  font-size: large;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.trials {
+  background-color: #0f2027;
+  margin: 0px;
+  margin-left: 35px;
+  padding-top: 25px;
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+}
+.attempt-counter {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.attempts {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.rules {
+  color: aliceblue;
+  background-color: #0f2027;
+  border-radius: 50px;
+  width: 400px;
+  height: 130px;
+  margin-left: 35px;
+  font-size: small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.scoring {
+  padding-top: 20px;
+  padding-left: 40px;
+  margin: 6px;
+}
+.rule {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0px;
+  padding-top: 0px;
+  padding-left: 100px;
+}
+.rightcontainer {
+  background-color: #1b4756b0;
+  width: 470px;
+  box-shadow: -1px 1px 3px gray;
+  height: 500px;
+  border-radius: 40px;
+}
+#endgame {
+  background-color: #203a43;
+  box-shadow: 1px 1px 3px gray;
+  width: 500px;
+  height: 400px;
+  border-radius: 40px;
+}
+.hangman {
+  padding-top: 30px;
+  color: aliceblue;
+  text-align: center;
+}
+.your-Score {
+  color: aliceblue;
+  margin: 0px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.restart {
+  background-color: #0f2027;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: aliceblue;
+  border-radius: 20px;
+}
+.btn-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.exit {
+  background-color: #0f2027;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: aliceblue;
+  border-radius: 20px;
+}
